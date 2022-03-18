@@ -1,5 +1,5 @@
 # Dockerfile for KMS Server
-# Copyright (C) 2018 - 2020 Drixn <admin@drixn.com>
+# Copyright (C) 2018 - 2020 Drixn <i@drixn.com>
 # Reference URL:
 # https://github.com/Wind4/vlmcsd
 
@@ -14,7 +14,7 @@ RUN apk add --no-cache git make build-base && \
 
 FROM alpine:latest
 
-LABEL maintainer="Drixn <admin@drixn.com>"
+LABEL maintainer="Drixn <i@drixn.com>"
 
 COPY --from=builder /root/vlmcsd/bin/vlmcsd /usr/bin/vlmcsd
 
